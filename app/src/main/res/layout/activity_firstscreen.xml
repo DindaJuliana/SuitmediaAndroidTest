@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="@drawable/gradient_background">
+
+    <!-- Circle Image/Button -->
+    <ImageView
+        android:id="@+id/ivAddUser"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="140dp"
+        android:src="@drawable/ic_add_user"
+        android:scaleType="centerInside" />
+
+    <!-- Name EditText -->
+    <EditText
+        android:id="@+id/etName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ivAddUser"
+        android:layout_marginTop="40dp"
+        android:hint="Name"
+        android:padding="12dp"
+        android:background="@drawable/roundded_edit_text"
+        android:inputType="text"
+        android:textColor="@android:color/black"
+        android:textSize="16sp"
+        android:textColorHint="@android:color/darker_gray" />
+
+    <!-- Palindrome EditText -->
+    <EditText
+        android:id="@+id/etPalindrome"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/etName"
+        android:layout_marginTop="16dp"
+        android:hint="Palindrome"
+        android:padding="12dp"
+        android:background="@drawable/roundded_edit_text"
+        android:inputType="text"
+        android:textColor="@android:color/black"
+        android:textSize="16sp"
+        android:textColorHint="@android:color/darker_gray" />
+
+    <!-- Check Button -->
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnCheck"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/etPalindrome"
+        android:layout_marginTop="50dp"
+        android:paddingVertical="10dp"
+        android:paddingHorizontal="25dp"
+        android:background="@drawable/roundded_button"
+        android:text="CHECK"
+        android:backgroundTint="#2B637B"
+        android:textColor="@android:color/white"
+        android:textSize="16sp" />
+
+    <!-- Next Button -->
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnNext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnCheck"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/roundded_button"
+        android:text="NEXT"
+        android:backgroundTint="#2B637B"
+        android:textColor="@android:color/white"
+        android:textSize="16sp" />
+
+</RelativeLayout>
